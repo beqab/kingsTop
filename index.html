@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
 	<link rel="stylesheet" type="text/css" href="css/fontawesome.css">
 	<!-- jQuery library -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!-- Popper JS -->
@@ -15,9 +16,60 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-
+ <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
- <h1 style="background: red">hi <i class="fas fa-building"></i> <img src="images/Asset 2-8.png"></h1>
+	<!-- ===========strart header========== -->
+    <header>
+    	 <div class="container-fluid">
+    	 	 <div class="row d-flex align-content-center">
+    	 	 	 <h1 class="col-3 align-items-center  d-flex "><a href="index.html"><img src='images/logo.png'></a></h1>
+    	 	 	 <div class="col-6 align-items-center justify-content-center d-flex">
+    	 	 	 	 <form class="form-group search">
+    	 	 	 	 	<button class="btn float-left"><i class="fas fa-search"></i></button><input type="search" class="form-control float-left" name="search" placeholder="ძებნა">
+    	 	 	 	 </form>
+    	 	 	 </div>
+    	 	 	 <div class='col-3	 user_nav align-items-center justify-content-end d-flex'>
+    	 	 	 	<a class="login" href="#">ვტორიზაცია</a>
+    	 	 	 	<a class="register" href="#">რეგისტრაცი</a>
+    	 	 	 </div>
+    	 	 </div>
+    	 </div>
+    </header>
+    <section class="home_section">
+    	 <div class="container">
+    	 	 <div class="row">
+    	 	 	 <div class="col-md-7">
+    	 	 	 	 <div class="select_clsss">
+    	 	 	 	 	<span>კლასი</span>
+    	 	 	 	 	<select>..4
+    	 	 	 	 		<option>1</option>
+    	 	 	 	 		<option>2</option>
+    	 	 	 	 		<option>3</option>
+    	 	 	 	 	</select>
+        	 	 	 	 </div>
+        	 	 	 	 <div class="location_filter col-sm-12">
+        	 	 	 	 	<ul class="list-unstyled">
+        	 	 	 	 		<li class="list-inline-item active"><a href="#">ქვეყნის მაშტაბით</a></li>
+        	 	 	 	 		<li class="list-inline-item"><a href="#">ქალაქის მაშტაბით</a></li>
+        	 	 	 	 		<li class="list-inline-item"><a href="#">სკოლის მაშტაბით</a></li>
+        	 	 	 	 		<li class="list-inline-item"><a href="#">რეგიონის მაშტაბით</a></li>
+        	 	 	 	 	</ul>
+        	 	 	 	 </div>
+        	 	 	 	 <div class="subject_filter col-sm-12">
+        	 	 	 	 	 <ul class="list-unstyled">
+        	 	 	 	 	 	<li class="list-inline-item active"><a href="#">სერთო</a></li>
+        	 	 	 	 	 	<li class="list-inline-item"><a href="#">მათემატიკა</a></li>	
+        	 	 	 	 	 	<li class="list-inline-item"><a href="#">ინგლისური</a></li>
+        	 	 	 	 	 	<li class="list-inline-item"><a href="#">ქართული</a></li>
+        	 	 	 	 	 </ul>
+        	 	 	 	 </div>
+    	 	 	 </div>
+    	 	 	 <div class="col-md-5">
+    	 	 	 	
+    	 	 	 </div>
+    	 	 </div>
+    	 </div>
+    </section>
 </body>
 </html>

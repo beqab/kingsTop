@@ -1,0 +1,56 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+body{
+	background: #1E63B5;
+}
+/*hedaer*/
+
+header form.search input::placeholder{
+   color: #fff;
+   font-weight: bold;
+}
+header form.search button{
+   background-color: transparent;
+   border: 0;
+   color: #fff;
+   font-size: 27px;
+   padding:1px;
+   height: 38px;
+}
+header form.form-group{
+  margin-bottom: 0px;
+}
+header form.search input{
+      width: 315px;
+    margin-left: 14px;
+  background: transparent;
+  border-radius: 50px;
+  border: 1px solid #fff;
+   	color: #fff;
+   font-weight: bold;
+}
+header h1{
+	margin-bottom: 0px;
+}
+header .user_nav a.register{
+    color: #08087C;
+     background: #FCC454;
+}
+header .user_nav a.login{
+  color: #fff;
+  border: 1px solid #fff;
+  margin-right: 14px;
+}
+header .user_nav a{
+          padding: 6px 12px;
+      border-radius: 50px;
+      display: inline-block;
+	}
+/*=======end hedaer====*/
+/*=======start home_section====*/
+section.home_section .container{
+	background: #fff;
+}
