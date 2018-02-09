@@ -2,9 +2,17 @@
 	margin: 0px;
 	padding: 0px;
 	text-decoration: none;
+  font-family: 'MyriadPro';
 }
 body{
 	background: #1E63B5;
+}
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('fonts/MyriadPro-Regular.eot');
+    src: local('ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã¢â‚¬Â¹Ãƒâ€¦Ã¢â‚¬Å“ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âº'), url('fonts/MyriadPro-Regular.woff') format('woff'), url('fonts/MyriadPro-Regular.ttf') format('truetype'), url('fonts/MyriadPro-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 /*hedaer*/
 
@@ -52,5 +60,81 @@ header .user_nav a{
 /*=======end hedaer====*/
 /*=======start home_section====*/
 section.home_section .container{
-	background: #fff;
+	background: #F2F2F2;
 }
+.location_filter ul li.lastLi{
+      border-right: 0px;
+
+}
+.location_filter ul li, .subject_filter ul li{
+  padding-right: 17px;
+  margin-right: 0px;
+  border-right: 2px solid #ccc;
+}
+.location_filter ul a{
+  color: #1E63B5;
+}
+.location_filter ul{
+  font-size: 13px;
+}
+.location_filter select:focus{
+  outline: none;
+  box-shadow: none;
+}
+.location_filter select option:last-child{
+   display: none;
+}
+.location_filter select{
+  width: 118px;
+  background-color: transparent;
+  border:none;
+  color: #1E63B5;
+
+  }
+  .subject_filter ul a{
+  color: #1E63B5;
+  font-size: 13px;
+} 
+.select_clsss{
+  margin-bottom: 24px;
+}
+/*table first*/
+.first_tbale{
+ 
+  font-weight: bold;
+}
+
+
+
+ .first_tbale.table-bordered{
+   border:0px;
+  border-top: 40px solid #1E63B5;
+  background-color: #fff;
+ }
+ .first_tbale.table-bordered tr {
+    padding-left: 20px;
+ }
+ .first_tbale.table-bordered td {
+    border: 3px solid #dee2e6;
+} 
+.first_tbale.table-bordered tr:first-child td{
+  padding-top: 30px;
+}
+.first_tbale.table-bordered tr:last-child td{
+  border-bottom: 0px;
+}
+.first_tbale.table-bordered td:last-child{
+   border-right: 0px;
+}
+.first_tbale.table-bordered td:first-child{
+  border-left: 0px;
+}
+.first_tbale  tbody td:first-child{
+    width: 50%;
+ }
+ .first_tbale  tbody td img{
+   width: 40px;
+   height: 40px;
+   margin-right: 10px;
+   border-radius: 50px;
+ }
