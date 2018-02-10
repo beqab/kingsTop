@@ -1,0 +1,70 @@
+
+
+// erdponsive
+
+@media only screen and (max-width: 992px){
+        header form.search input{
+        	width: 80%;
+        }
+        .reiting_table{
+        	max-width: 100%;
+        }
+
+        .first_tbale tbody td:first-child {
+    width: 62%;
+}
+section.home_section .container {
+    background: #F2F2F2;
+    padding: 50px 15px 40px;
+
+    }
+    footer ul li{
+    	border: none;
+    }
+    .reiting_table{
+    	padding: 0 3px 20px;
+    	font-style: 10px;
+    }
+    .first_tbale.table-bordered {
+    border: 0px;
+    background-color: #fff;
+    font-size: 14px;
+}
+.first_tbale tbody td img{
+	margin-right: 5px;
+	width: 30px;
+	height: 30px;
+}
+.first_tbale.table-bordered td{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+}
+@media only screen and (max-width: 576px){
+  header form.search input{
+  	padding: 4px 6px;
+  }
+  header form.search button{
+  	line-height: 34px;
+  	height: 34px;
+  	i{
+        font-size: 20px;
+  line-height: 34px;
+        vertical-align:top;
+  	}
+  }
+  header .user_nav a {
+    padding: 4px 12px;
+    border-radius: 50px;
+    margin-top: 19px;
+    display: inline-block;
+}
+  h1 img{
+  	width: 50px;
+  	height: 50px;
+  }
+  .month_rting{
+  	margin-top: 50px;
+  }
+}
