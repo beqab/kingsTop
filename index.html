@@ -54,28 +54,245 @@
         	 	 	 	 <div class="location_filter col-sm-12">
         	 	 	 	 	<ul class="list-unstyled my-4">
         	 	 	 	 		<li class="list-inline-item active"><a class="active" href="#">ქვეყნის მაშტაბით</a></li>
-        	 	 	 	 		<li class="list-inline-item"><select>
+        	 	 	 	 		<li class="list-inline-item">
+        	 	 	 	 		<!-- <select>
                                             
                               <option>თბილისი</option>              
                               <option>თბილისი</option>              
                               <option>თბილისი</option> 
                               <option selected="selected">რეიტინგის მაშტაბით</option>             
-                                </select></li>
-        	 	 	 	 		<li class="list-inline-item"><select>
+                                </select> -->
+
+                                <div class="filter">
+<input type="text" class="formClear" id="myInput" onkeyup="myFunction()" value="ქალაქის მიხედვით" title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">ტყიბული</a></li>
+  <li><a href="#">ასპინძა</a></li>
+
+  <li><a href="#">ბორჯომი</a></li>
+  <li><a href="#">რუსთავი</a></li>
+
+  <li><a href="#">ფოთი</a></li>
+  <li><a href="#">გაგრა</a></li>
+  <li><a href="#">გორი</a></li>
+  <li><a href="#">თბილისი</a></li>
+  <li><a href="#">ბაუმი</a></li>
+  <li><a href="#">ბაუმი</a></li>
+</ul>
+</div>
+
+                            </li>
+        	 	 	 	 		<li class="list-inline-item"><select >
                                             
+                              <option>თბილისი</option>              
+                              <option>თბილისი</option>              
+                              <option>თბილისი</option>              
+                              <option>თბილისი</option>              
+                              <option>თბილისი</option>              
+                              <option>თბილისი</option>              
+                              <option>თბილისი</option>              
+                              <option>თბილისი</option>              
+                              <option>თბილისი</option>              
+                              <option>თბილისი</option>              
+                              <option>თბილისი</option>              
+                              <option>თბილისი</option>              
+                              <option>თბილისი</option>              
+                              <option>თბილისი</option>              
                               <option>თბილისი</option>              
                               <option>თბილისი</option>              
                               <option>თბილისი</option> 
                               <option selected="selected">სკოლის მაშტაბით</option>             
-                                </select></li>
-        	 	 	 	 		<li class="list-inline-item lastLi"><select>
-                              <option>თბილისი</option>              
-                              <option>თბილისი</option>              
-                              <option>თბილისი</option> 
-                              <option selected="selected">რეგიონის მაშტაბით</option>             
-                                </select></li>
+                                </select>
+                                	
+
+                                <!-- 	<div class="filter">
+<input type="text" class="formClear" id="myInput2" onkeyup="myFunction2()" value="სკოლის მიხედვით" title="Type in a name">
+
+<ul id="myUL2">
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+</ul>
+</div> -->
+                                </li>
+        	 	 	 	 		<li class="list-inline-item lastLi">
+        	<div class="filter">
+<input type="text" class="formClear" id="myInput3" onkeyup="myFunction3()" value="ქალაქის მიხედვით" title="Type in a name">
+
+<ul id="myUL3">
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+</ul>
+</div>
+        	 	 	 	 		</li>
         	 	 	 	 	</ul>
         	 	 	 	 </div>
+
+        	 	 	 	
+
+        	 	 	 	 <script>
+
+        	 	 	 	 	// piltri qlaqis mixedvit
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+ 
+ $('#myInput').on({
+
+ 	focus:function(){
+       $('#myUL').slideDown()
+ },
+    blur: function(){
+    	$('#myUL').slideUp()
+    }
+ })
+ $('#myUL li a').each(function(){
+ 	 $(this).click(function(){
+
+ 	
+ 	console.log($('#myInput').val($(this).text()))
+ 	 })
+ })
+// ===========================
+// piltri skolis mixedvit
+function myFunction2() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput2");
+
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL2");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+ 
+ $('#myInput2').on({
+
+ 	focus:function(){
+       $('#myUL2').slideDown()
+ },
+    blur: function(){
+    	$('#myUL2').slideUp()
+    }
+ })
+ $('#myUL2 li a').each(function(){
+ 	 $(this).click(function(){
+
+ 	
+ 	$('#myInput2').val($(this).text())
+
+ 	 })
+ })
+
+
+
+
+// ======================================
+// piltri skolis mixedvit
+function myFunction3() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput3");
+
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL3");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+ 
+ $('#myInput3').on({
+
+ 	focus:function(){
+       $('#myUL3').slideDown()
+ },
+    blur: function(){
+    	$('#myUL3').slideUp()
+    }
+ })
+ $('#myUL3 li a').each(function(){
+ 	 $(this).click(function(){
+
+ 	
+ 	console.log($('#myInput3').val($(this).text()))
+ 	 })
+ })
+
+
+
+
+// ======================================
+
+ // claer form vlaue
+
+ $(function(){
+			
+			$('.formClear').each(function(index, element) {
+    var $element = $(element);
+    var defaultValue = $element.val();
+    $element.css('background-color', '');
+    $element.focus(function() {
+        var actualValue = $element.val();
+        if (actualValue == defaultValue) {
+            $element.val('');
+            $element.css('background-color', '');
+        }
+    });
+    $element.blur(function() {
+        var actualValue = $element.val();
+        if (!actualValue) {
+            $element.val(defaultValue);
+            $element.css('background-color', '');
+        }
+    });
+});
+		
+		
+
+		});
+</script>
+
         	 	 	 	 <div class="subject_filter col-sm-12">
         	 	 	 	 	 <ul class="list-unstyled mb-5">
         	 	 	 	 	 	<li class="list-inline-item active"><a href="#">სერთო</a></li>

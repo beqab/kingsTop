@@ -122,13 +122,41 @@ section.home_section .container {
   width: 118px;
   background-color: transparent;
   border: none;
+  color: #000;
+  max-height: 200px;
+  overflow-y: scroll; }
+  .location_filter select option:last-child {
+    overflow: hidden; }
+  .location_filter select:hover {
+    color: #1E63B5; }
+.location_filter .filter {
+  position: relative; }
+  .location_filter .filter ul {
+    display: none;
+    max-height: 200px;
+    overflow-y: scroll;
+    position: absolute;
+    background: #fff;
+    width: 127%;
+    top: 21px;
+    z-index: 445; }
+    .location_filter .filter ul li {
+      border-right: 0px;
+      list-style-type: none; }
+      .location_filter .filter ul li a {
+        display: block;
+        margin-left: 10px; }
+.location_filter input {
+  width: 118px;
+  background-color: transparent;
+  border: none;
   color: #000; }
-  .location_filter select:focus {
+  .location_filter input:focus {
     outline: none;
     box-shadow: none; }
-  .location_filter select option:last-child {
+  .location_filter input option:last-child {
     display: none; }
-  .location_filter select:hover {
+  .location_filter input:hover {
     color: #1E63B5; }
 
 .subject_filter ul a {

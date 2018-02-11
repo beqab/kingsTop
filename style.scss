@@ -169,7 +169,44 @@ section.home_section .container {
     }
     font-size: 13px;
   }
-  select {
+  select{
+      width: 118px;
+    background-color: transparent;
+    border: none;
+    color: #000;
+        max-height: 200px;
+    overflow-y: scroll;
+      option:last-child{
+        overflow: hidden;
+      }
+   
+    &:hover{
+      color: $mane-color
+    }
+  }
+   .filter{
+    position: relative;
+      ul{
+        display: none;
+max-height: 200px;
+overflow-y: scroll;
+position: absolute;
+    background: #fff;
+        width: 127%;
+    top: 21px;
+    z-index: 445;
+      li{
+     border-right: 0px;
+     
+        list-style-type: none;
+        a{
+          display: block;
+          margin-left: 10px;
+        }
+      }
+      }
+   }
+  input {
     &:focus {
       outline: none;
       box-shadow: none
