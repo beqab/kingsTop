@@ -39,12 +39,17 @@ section.home_section .container {
 	padding-left: 5px;
 	padding-right: 5px;
 }
+section.search .container .student{
+	margin-left: 10px;
+	margin-right: 10px;
+}
 
 }
 @media only screen and (max-width: 576px){
   header form.search input{
   	padding: 4px 6px;
   }
+
   header form.search button{
   	line-height: 34px;
   	height: 34px;
@@ -54,6 +59,7 @@ section.home_section .container {
         vertical-align:top;
   	}
   }
+
   header .user_nav a {
     padding: 4px 12px;
     border-radius: 50px;
@@ -66,5 +72,41 @@ section.home_section .container {
   }
   .month_rting{
   	margin-top: 50px;
+  }
+  section.home_section.login .container .title{
+  	font-size: 23px;
+
+  }
+  section.home_section.login .container .form-group .inputs{
+  	padding: 35px;
+  	margin-top: 30px;
+  	margin-bottom: 30px;
+  }
+  section.home_section.login .container .form-group .inputs input{
+  	width: 250px;
+
+  }
+  section.home_section.login .container .form-group button{
+  	font-size: 26px;
+  	padding: 8px 40px;
+  }
+  section.search .container .name{
+  	display: block;
+  	margin-top: 14px;
+  	text-align: center;
+
+  }
+  section.search .avatar{
+        text-align: center;
+  }
+  section.search .container .student .info ul{
+  	border-left: 0px;
+  	border-top: 3px solid #ccc;
+  	text-align: center;
+  	max-width: 80%;
+  	margin: auto;
+  	padding-left: 0px;
+  	margin-top: 10px;
+  	padding-top: 10px;
   }
 }

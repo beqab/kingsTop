@@ -19,40 +19,85 @@
 </head>
 <body>
 	<!-- ===========strart header========== -->
-    <header>
+
+  <!-- emateba klai heders =>profile  gold -->
+    <header class="profile gold">
     	 <div class="container-fluid">
     	 	 <div class="row d-flex align-content-center">
     	 	 	 <h1 class="col-md-2 col-2 align-items-center  d-flex "><a href="index.html"><img src='images/logo.png'></a></h1>
 
-    	 	 	 <div class="col-md-7 col-10  align-items-center justify-content-center d-flex">
+    	 	 	 <!-- <div class="col-md-7 col-10  align-items-center justify-content-center d-flex">
     	 	 	 	 <form class="form-group search">
     	 	 	 	 	<button class="btn float-left"><i class="fas fa-search"></i></button><input type="search" class="form-control float-left" name="search" placeholder="ძებნა">
     	 	 	 	 </form>
-    	 	 	 </div>
-    	 	 	 <div class='col-md-3 col-10 offset-md-0 offset-2 	 user_nav align-items-center justify-content-center justify-content-md-end d-flex'>
-    	 	 	 	<a class="login" href="#">ვტორიზაცია</a>
-    	 	 	 	<a class="register" href="#">რეგისტრაცი</a>
+    	 	 	 </div> -->
+    	 	 	 <div class='col-10	 user_nav align-items-center  justify-content-end d-flex'>
+    	 	 	 <!-- 	<a class="login" href="#">ვტორიზაცია</a> -->
+    	 	 	 	<a class="register" href="#">გასვლა</a>
     	 	 	 </div>
     	 	 </div>
     	 </div>
     </header>
-    <section class="home_section login">
-    	 <div class="container d-flex flex-column align-items-center">
-    	     <div class="title">
-             პროფილში შესვლა
-           </div>
+    <section class="profile">
+        <div class="container personal_info">
+            <div class="row d-flex align-items-center">
+               <div class="offset-4 d-flex align-items-center col-sm-8">
+               <div class="mr-5 name d-inline-block">
+                 სახელი გვარი
+               </div>
+               
+          
+                <ul class="ml-5 list-unstyled d-inline-block mb-0">
+                   <li ><span>ქალქი</span> <span class="personal_info">ქუთაისი</span></li>
+                   <li ><span> სკოლა</span> <span class="personal_info">რაღაც სკოლ</span></li>
+                   <li ><span> კლასი </span> <span class="personal_info">5</span></li>
+                   <li ><span> ასაკი </span> <span class="personal_info">15</span></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+           <div class="container awrds">
+              <div class="row">
+                  <div class="left_side col-md-4">
+                    <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item ">
+      <a class="nav-link active" data-toggle="tab" href="#home">ქართული</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1">მათემატიკა</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu2">ინგლისური</a>
+    </li>
+  </ul>
 
-           <div class="form-group has-danger text-center">
-               <form>
-                 <div class="inputs d-flex flex-column align-items-center ">
-                  <input type="text" id="inputDanger1" class="form-control form-control-danger" placeholder="შეიყვნაეთ ტელეფონი ან უნიკალური კოდი" name="code" required="">
-                  <br>
-                  <input type="password" class="form-control form-control-danger" placeholder="შეიყვანეთ პაროლი" name="pas" required="">
-                </div>
-                   <button class="d-block m-auto btn">შესვლა</button>
-               </form>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+     <ul class="list-unstyled">
+       <li><img src="images/goldcoin.png"><span>50 ოქროს ქულა</span></li>
+       <li><img src="images/silvercoin.png"><span>150 ვერცხლის ქულა</span></li>
+       <li><img src="images/bronzecoin.png"><span>1450 ბრინჯაოს ქულა</span></li>
+     </ul>
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+  </div>
+                     <div class="card_student">
+                       
+                     </div>
+                  </div>
+                  <div class="right_side col-md-8">
+                    f
+                  </div>
+              </div>
            </div>
-    	 </div>
     </section>
     <footer>
     	<h3 class="text-center">კონტაქტი</h3>
