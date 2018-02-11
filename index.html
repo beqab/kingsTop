@@ -146,151 +146,7 @@
 
         	 	 	 	 <script>
 
-        	 	 	 	 	// piltri qlaqis mixedvit
-function myFunction() {
-    var input, filter, ul, li, a, i;
-    input = document.getElementById("myInput");
 
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-
-        }
-    }
-}
- 
- $('#myInput').on({
-
- 	focus:function(){
-       $('#myUL').slideDown()
- },
-    blur: function(){
-    	$('#myUL').slideUp()
-    }
- })
- $('#myUL li a').each(function(){
- 	 $(this).click(function(){
-
- 	
- 	console.log($('#myInput').val($(this).text()))
- 	 })
- })
-// ===========================
-// piltri skolis mixedvit
-function myFunction2() {
-    var input, filter, ul, li, a, i;
-    input = document.getElementById("myInput2");
-
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL2");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-
-        }
-    }
-}
- 
- $('#myInput2').on({
-
- 	focus:function(){
-       $('#myUL2').slideDown()
- },
-    blur: function(){
-    	$('#myUL2').slideUp()
-    }
- })
- $('#myUL2 li a').each(function(){
- 	 $(this).click(function(){
-
- 	
- 	$('#myInput2').val($(this).text())
-
- 	 })
- })
-
-
-
-
-// ======================================
-// piltri skolis mixedvit
-function myFunction3() {
-    var input, filter, ul, li, a, i;
-    input = document.getElementById("myInput3");
-
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL3");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-
-        }
-    }
-}
- 
- $('#myInput3').on({
-
- 	focus:function(){
-       $('#myUL3').slideDown()
- },
-    blur: function(){
-    	$('#myUL3').slideUp()
-    }
- })
- $('#myUL3 li a').each(function(){
- 	 $(this).click(function(){
-
- 	
- 	console.log($('#myInput3').val($(this).text()))
- 	 })
- })
-
-
-
-
-// ======================================
-
- // claer form vlaue
-
- $(function(){
-			
-			$('.formClear').each(function(index, element) {
-    var $element = $(element);
-    var defaultValue = $element.val();
-    $element.css('background-color', '');
-    $element.focus(function() {
-        var actualValue = $element.val();
-        if (actualValue == defaultValue) {
-            $element.val('');
-            $element.css('background-color', '');
-        }
-    });
-    $element.blur(function() {
-        var actualValue = $element.val();
-        if (!actualValue) {
-            $element.val(defaultValue);
-            $element.css('background-color', '');
-        }
-    });
-});
-		
-		
-
-		});
 </script>
 
         	 	 	 	 <div class="subject_filter col-sm-12">
@@ -310,31 +166,31 @@ function myFunction3() {
     </thead>
     <tbody >
       <tr>
-        <td><img src="images/avatar.png"> გიგა შენგელია</td>
+        <td><a href="#"> <img src="images/avatar.png"> გიგა შენგელია </a></td>
         <td class="text-right">132 ქულა</td>
       </tr>
      <tr>
-        <td><img src="images/avatar.png"> გიგა შენგელია</td>
+        <td><a href="#"> <img src="images/avatar.png"> გიგა შენგელია </a></td>
         <td class="text-right">132 ქულა</td>
       </tr>
       <tr>
-        <td><img src="images/avatar.png"> გიგა შენგელია</td>
+        <td><a href="#"> <img src="images/avatar.png"> გიგა შენგელია </a></td>
         <td class="text-right">132 ქულა</td>
       </tr>
       <tr>
-        <td><img src="images/avatar.png"> გიგა შენგელია</td>
+        <td><a href="#"> <img src="images/avatar.png"> გიგა შენგელია </a></td>
         <td class="text-right">132 ქულა</td>
       </tr>
        <tr>
-        <td><img src="images/avatar.png"> გიგა შენგელია</td>
+        <td><a href="#"> <img src="images/avatar.png"> გიგა შენგელია </a></td>
         <td class="text-right">132 ქულა</td>
       </tr>
       <tr>
-        <td><img src="images/avatar.png"> გიგა შენგელია</td>
+        <td><a href="#"> <img src="images/avatar.png"> გიგა შენგელია </a></td>
         <td class="text-right">132 ქულა</td>
       </tr>
       <tr>
-        <td><img src="images/avatar.png"> გიგა შენგელია</td>
+        <td><a href="#"> <img src="images/avatar.png"> გიგა შენგელია </a></td>
         <td class="text-right">132 ქულა</td>
       </tr>
     </tbody>
@@ -357,43 +213,47 @@ function myFunction3() {
     <tbody>
       <tr>
         <td class="text-left">1</td>
-        <td class="text-left">Doe</td>
+        <td class="text-left"><a href="#"> Doe </a></td>
       </tr>
        <tr>
         <td class="text-left">2</td>
-        <td class="text-left">Doe</td>
+        <td class="text-left"><a href="#"> Doe </a></td>
       </tr>
       <tr>
         <td class="text-left">3</td>
-        <td class="text-left">Doe</td>
+        <td class="text-left"><a href="#"> Doe </a></td>
       </tr>
       <tr>
         <td class="text-left">4</td>
-        <td class="text-left">Doe</td>
+        <td class="text-left"><a href="#"> Doe </a></td>
       </tr>
        <tr>
+       	
         <td class="text-left">5</td>
-        <td class="text-left">Doe</td>
+        <td class="text-left"> <a href="#"> Doe </a> </td>
+        
       </tr>
        <tr>
+       
         <td class="text-left">6</td>
-        <td class="text-left">Doe</td>
+        <td class="text-left"> <a href="#"> Doe </a></td>
+        
       </tr>
        <tr>
         <td class="text-left">7</td>
-        <td class="text-left">Doe</td>
+        <td class="text-left"><a href="#"> Doe </a> </td>
       </tr>
        <tr>
         <td class="text-left">8</td>
-        <td class="text-left">Doe</td>
+        <td class="text-left"><a href="#"> Doe </a></td>
       </tr>
        <tr>
         <td class="text-left">9</td>
-        <td class="text-left">Doe</td>
+        <td class="text-left"><a href="#"> Doe </a></td>
       </tr>
        <tr>
         <td class="text-left">10</td>
-        <td class="text-left">Doe</td>
+        <td class="text-left"><a href="#"> Doe </a></td>
       </tr>
     
     </tbody>
@@ -428,5 +288,7 @@ function myFunction3() {
     		<li class="text-center">დასაქმება: hr@kings.ge</li>
     		<li class="text-center">მისამართი: ცოტნე დადიანის #7 "ქარვასლა" - B307</li>
     	</ul>
-    </footer></body>
+    </footer>
+     <script type="text/javascript" src="js/mine.js"></script>
+</body>
 </html>
