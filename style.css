@@ -461,6 +461,8 @@ section.profile .container.awrds {
         color: #000059;
         border-bottom: 1px solid #1E63B5;
         margin-left: 10px; }
+      section.profile .container.awrds .left_side #home ul li a {
+        display: inline-block; }
   section.profile .container.awrds .right_side {
     background-repeat: no-repeat;
     background: url("images/bgbottom.png") bottom right no-repeat;
@@ -486,7 +488,10 @@ section.profile .container.awrds {
         color: #000059;
         font-size: 18px;
         margin-top: 10px;
-        display: inline-block; }
+        display: inline-block;
+        transition: 0.3s; }
+        section.profile .container.awrds .right_side .shear a:hover {
+          color: #1E63B5; }
       section.profile .container.awrds .right_side .shear div {
         color: #1E63B5;
         margin-top: 3px;

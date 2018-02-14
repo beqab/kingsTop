@@ -624,6 +624,9 @@
                      border-bottom: 1px solid $mane-color;
                      margin-left: 10px;
                      }
+                     a{
+                      display: inline-block;
+                     }
                }
              }
               .right_side{
@@ -652,6 +655,10 @@
       font-size: 18px;
       margin-top: 10px;
       display: inline-block;
+      transition:0.3s;
+       &:hover{
+        color: $mane-color;
+       }
      }
                      div{
                       color:$mane-color; 
