@@ -38,16 +38,16 @@
     	 	 </div>
     	 </div>
     </header>
-    <section class="profile">
+    <section class="profile costumer ">
         <div class="container personal_info">
             <div class="row d-flex align-items-center">
-               <div class="offset-4 d-flex align-items-center col-sm-8">
-               <div class="mr-5 name d-inline-block">
+               <div class="offset-0 offset-lg-4 d-flex align-items-center col-12 col-lg-8">
+               <div class="mr-0 mr-md-5 name d-inline-block">
                  სახელი გვარი
                </div>
                
           
-                <ul class="ml-5 list-unstyled d-inline-block mb-0">
+                <ul class="ml-3 ml-md-5 list-unstyled d-inline-block mb-0">
                    <li ><span>ქალქი</span> <span class="personal_info">ქუთაისი</span></li>
                    <li ><span> სკოლა</span> <span class="personal_info">რაღაც სკოლ</span></li>
                    <li ><span> კლასი </span> <span class="personal_info">5</span></li>
@@ -58,8 +58,8 @@
       </div>
            <div class="container awrds">
               <div class="row">
-                  <div class="left_side col-md-4">
-                    <ul class="nav nav-tabs" role="tablist">
+                  <div class="left_side  col-lg-5 col-xl-4">
+                    <ul class="container tabscontoler nav nav-tabs" role="tablist">
     <li class="nav-item ">
       <a class="nav-link active" data-toggle="tab" href="#home">ქართული</a>
     </li>
@@ -75,9 +75,9 @@
   <div class="tab-content">
     <div id="home" class="container tab-pane active"><br>
      <ul class="list-unstyled">
-       <li><img src="images/goldcoin.png"><span>50 ოქროს ქულა</span></li>
-       <li><img src="images/silvercoin.png"><span>150 ვერცხლის ქულა</span></li>
-       <li><img src="images/bronzecoin.png"><span>1450 ბრინჯაოს ქულა</span></li>
+       <li><a href="#" data-toggle="tooltip" title="ამადა ამის მოსაგებად დაგრჩათ ესადა ეს ქულა"><img src="images/goldcoin.png"> </a> <span>50 ოქროს ქულა</span></li>
+       <li><a href="#" data-toggle="tooltip" title="ამადა ამის მოსაგებად დაგრჩათ 50"><img src="images/silvercoin.png"></a><span>150 ვერცხლის ქულა</span></li>
+       <li><a href="#" data-toggle="tooltip" title="ამადა ამის მოსაგებად დაგრჩათ 50 ქულა"><img src="images/bronzecoin.png"></a><span>1450 ბრინჯაოს ქულა</span></li>
      </ul>
     </div>
     <div id="menu1" class="container tab-pane fade"><br>
@@ -89,11 +89,32 @@
       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
     </div>
   </div>
-                     <div class="card_student">
-                       <!--  <img src="images/student.jpg"> -->
+                    <div class="card_student">
+                     <div class="card_student_bg">
+                       <div class="student_status">
+                          მათემატიკის 2017 წლის I ადგილოსანი
+                       </div>
                      </div>
+                     <img class="student_img" src='images/student.jpg'>
+                     <div class="medal1">
+                       <img src="images/goldmedal.png">
+                     </div>
+                      <div class="medal2">
+                       <img src="images/goldmedal.png">
+                     </div>
+                      <div class="medal3">
+                       <img src="images/goldmedal.png">
+                     </div>
+                    </div>
                   </div>
-                  <div class="right_side col-md-8">
+
+
+
+
+
+
+
+                  <div class="right_side col-lg-7 col-xl-8">
                      <div class="shear">
                         <div>გააზიარე შენი ელექტრონული დაფის პროფილი</div>
                           <a href="#">გაზიარება</a>
@@ -128,5 +149,11 @@
     		<li class="text-center">დასაქმება: hr@kings.ge</li>
     		<li class="text-center">მისამართი: ცოტნე დადიანის #7 "ქარვასლა" - B307</li>
     	</ul>
-    </footer></body>
+    </footer>
+     <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+  </body>
 </html>

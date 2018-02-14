@@ -43,7 +43,48 @@ section.search .container .student{
 	margin-left: 10px;
 	margin-right: 10px;
 }
+  section.profile .container.awrds .card_student {
+    position: relative;
+    bottom: 810px;
+    width: 370px;
+    left: 45%;
+    transform: translate(-50%);
+}
+section.profile .container.personal_info {
+    padding-bottom: 228px;
+    padding-top: 15px;
+}
+.tabscontoler{
+  max-width: 370px;
+}
+.container.tab-pane{
+  max-width: 370px;
+}
+.awards {
+  margin-top: 20px;
 
+}
+section.profile .container.awrds .right_side .shear {
+    position: absolute;
+    right: -12%;
+    font-size: 10px;
+    top: 53%;
+    text-align: center;
+    background: #fff;
+    border-radius: 400px;
+    padding: 10px;
+    transform: translate(-50, 50%);
+    transform: translate(-50%, -50%);
+}
+.shear{
+  max-width: 30%;
+}
+section.profile .container.awrds .left_side {
+    position: relative;
+    padding-top: 376px;
+    background: #E6E6E6;
+    padding-bottom: 4px;
+}
 }
 @media only screen and (max-width: 576px){
   header form.search input{
@@ -109,4 +150,39 @@ section.search .container .student{
   	margin-top: 10px;
   	padding-top: 10px;
   }
+  section.profile .container.awrds .card_student {
+    position: relative;
+        bottom: 834px;
+    width: 370px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.nav-tabs .nav-link{
+      margin-right: 18px;
+}
+
+section.profile .container.awrds .right_side {
+    background-repeat: no-repeat;
+    background: url(images/bgbottom.png) bottom right no-repeat;
+    background-size: 50%;
+    position: relative;
+    padding-bottom: 160px;
+}
+section.profile .container.awrds .right_side .shear {
+    position: absolute;
+    left: 50%;
+    font-size: 12px;
+    top: 87%;
+    max-width: 80%;
+    text-align: center;
+    background: #fff;
+    border-radius: 400px;
+    padding: 10px;
+    transform: translate(-50, 50%);
+    transform: translate(-50%, -50%);
+}
+header.profile.gold {
+    background: url(images/goldbg.png);
+    background-size: contain;
+}
 }

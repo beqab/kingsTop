@@ -544,11 +544,38 @@
 
 
    /*  profile */
-
+   
    header.profile.gold{
          background: url('images/goldbg.png');
     background-size: 100% 141px;
    }
+    header.profile.bronze{
+  background: url('images/bronzebg.png') ;
+    background-size: 100% 141px;
+
+    }
+     header.profile.costumer{
+  background: url('images/costumerbg.png') ;
+    background-size: 100% 141px;
+    }
+    header.profile.silver{
+  background: url('images/silverbg.png') ;
+    background-size: 100% 141px;
+    }
+
+  section.profile.bronze .container.awrds .card_student_bg{
+       background: url(images/bronzeframe.png);
+  }
+  section.profile.costumer .container.awrds .card_student_bg{
+       background: url(images/costumerframe.png);
+  }
+   section.profile.silver .container.awrds .card_student_bg{
+       background: url(images/silverframe.png);
+  }
+  section.profile.gold .container.awrds{
+  background: #FFB200;
+  }
+    
    section.profile{
 
        .container.personal_info{
@@ -587,10 +614,18 @@
            max-width: 1200px;
                .left_side{
                  position: relative;
-                 padding-top: 180px;
-                 background: #E6E6E6;
-                 padding-bottom: 100px;
+        padding-top: 376px;
+    background: #E6E6E6;
+    padding-bottom: 100px;
+             #home ul li{
+                      margin-bottom: 10px;
+                     span{
+                      color: #000059;
+                     border-bottom: 1px solid $mane-color;
+                     margin-left: 10px;
+                     }
                }
+             }
               .right_side{
                 background-repeat: no-repeat;
                   background: url('images/bgbottom.png') bottom right no-repeat;
@@ -600,7 +635,7 @@
                        position: absolute;
     right: -17%;
     font-size: 10px;
-    top: 50%;
+      top: 90%;
     text-align: center;
     background: #fff;
     border-radius: 400px;
@@ -613,9 +648,15 @@
       padding: 2px  6px;
       border-radius: 59px;
       margin-top: 5px;
+      color: #000059;
+      font-size: 18px;
+      margin-top: 10px;
+      display: inline-block;
      }
                      div{
                       color:$mane-color; 
+                      margin-top: 3px;
+                      font-size: 11px;
                      }
                    }
                    .awards{
@@ -638,14 +679,56 @@
                      }
                    }
               }
-             .card_student{
-                 position: absolute;
-                 height: 390px;
-                 top: -280px;
-                 width: 370px;
-                 background: url('images/goldframe.png');
-                 background-position: -66px center;
-                 background-repeat: no-repeat;
+              .card_student{
+               position: relative;
+                  bottom: 810px;
+                 img.student_img{
+                    width: 268px;
+    height: 323px;
+    position: absolute;
+    top: 167px;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+                 }
+                 .medal1{
+           position: absolute;
+    bottom: -559px;
+    left: 13px;
+    z-index: 1;
+                 }
+                  .medal2{
+                    position: absolute;
+    bottom: -559px;
+    left: 120px;
+    z-index: 1;
+                 }
+                 .medal3{
+             position: absolute;
+    bottom: -559px;
+    z-index: 1;
+    left: 226px;
+                 }
+              }
+             .card_student_bg{
+                     position: absolute;
+    height: 391px;
+    z-index: 2;
+    top: 0px;
+    width: 370px;
+    background: url(images/goldframe.png);
+    background-position: -66px center;
+    background-repeat: no-repeat;
+      .student_status{
+            max-width: 80%;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 11px;
+    color: #8a7e7e;
+      }
              }
        }
    }
@@ -656,6 +739,7 @@
     max-width: 1200px;
     margin: auto;
       background: url('images/bgbottom.png') bottom right, #ccc;
+      background-size: 133px;
     background-repeat: no-repeat;
     background-origin: border-box;
      h3{

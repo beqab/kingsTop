@@ -401,6 +401,30 @@ header.profile.gold {
   background: url("images/goldbg.png");
   background-size: 100% 141px; }
 
+header.profile.bronze {
+  background: url("images/bronzebg.png");
+  background-size: 100% 141px; }
+
+header.profile.costumer {
+  background: url("images/costumerbg.png");
+  background-size: 100% 141px; }
+
+header.profile.silver {
+  background: url("images/silverbg.png");
+  background-size: 100% 141px; }
+
+section.profile.bronze .container.awrds .card_student_bg {
+  background: url(images/bronzeframe.png); }
+
+section.profile.costumer .container.awrds .card_student_bg {
+  background: url(images/costumerframe.png); }
+
+section.profile.silver .container.awrds .card_student_bg {
+  background: url(images/silverframe.png); }
+
+section.profile.gold .container.awrds {
+  background: #FFB200; }
+
 section.profile .container.personal_info {
   padding-bottom: 50px;
   padding-top: 15px; }
@@ -428,9 +452,15 @@ section.profile .container.awrds {
   max-width: 1200px; }
   section.profile .container.awrds .left_side {
     position: relative;
-    padding-top: 180px;
+    padding-top: 376px;
     background: #E6E6E6;
     padding-bottom: 100px; }
+    section.profile .container.awrds .left_side #home ul li {
+      margin-bottom: 10px; }
+      section.profile .container.awrds .left_side #home ul li span {
+        color: #000059;
+        border-bottom: 1px solid #1E63B5;
+        margin-left: 10px; }
   section.profile .container.awrds .right_side {
     background-repeat: no-repeat;
     background: url("images/bgbottom.png") bottom right no-repeat;
@@ -440,7 +470,7 @@ section.profile .container.awrds {
       position: absolute;
       right: -17%;
       font-size: 10px;
-      top: 50%;
+      top: 90%;
       text-align: center;
       background: #fff;
       border-radius: 400px;
@@ -452,9 +482,15 @@ section.profile .container.awrds {
         background: #FFB200;
         padding: 2px  6px;
         border-radius: 59px;
-        margin-top: 5px; }
+        margin-top: 5px;
+        color: #000059;
+        font-size: 18px;
+        margin-top: 10px;
+        display: inline-block; }
       section.profile .container.awrds .right_side .shear div {
-        color: #1E63B5; }
+        color: #1E63B5;
+        margin-top: 3px;
+        font-size: 11px; }
     section.profile .container.awrds .right_side .awards {
       background-color: #1E63B5;
       color: #fff;
@@ -472,13 +508,49 @@ section.profile .container.awrds {
         line-height: 30px;
         display: inline-block; }
   section.profile .container.awrds .card_student {
+    position: relative;
+    bottom: 810px; }
+    section.profile .container.awrds .card_student img.student_img {
+      width: 268px;
+      height: 323px;
+      position: absolute;
+      top: 167px;
+      z-index: 1;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    section.profile .container.awrds .card_student .medal1 {
+      position: absolute;
+      bottom: -559px;
+      left: 13px;
+      z-index: 1; }
+    section.profile .container.awrds .card_student .medal2 {
+      position: absolute;
+      bottom: -559px;
+      left: 120px;
+      z-index: 1; }
+    section.profile .container.awrds .card_student .medal3 {
+      position: absolute;
+      bottom: -559px;
+      z-index: 1;
+      left: 226px; }
+  section.profile .container.awrds .card_student_bg {
     position: absolute;
-    height: 390px;
-    top: -280px;
+    height: 391px;
+    z-index: 2;
+    top: 0px;
     width: 370px;
-    background: url("images/goldframe.png");
+    background: url(images/goldframe.png);
     background-position: -66px center;
     background-repeat: no-repeat; }
+    section.profile .container.awrds .card_student_bg .student_status {
+      max-width: 80%;
+      margin: auto;
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 11px;
+      color: #8a7e7e; }
 
 footer {
   background: #ccc;
@@ -487,6 +559,7 @@ footer {
   max-width: 1200px;
   margin: auto;
   background: url("images/bgbottom.png") bottom right, #ccc;
+  background-size: 133px;
   background-repeat: no-repeat;
   background-origin: border-box; }
   footer h3 {
@@ -541,7 +614,48 @@ footer {
 
   section.search .container .student {
     margin-left: 10px;
-    margin-right: 10px; } }
+    margin-right: 10px; }
+
+  section.profile .container.awrds .card_student {
+    position: relative;
+    bottom: 810px;
+    width: 370px;
+    left: 45%;
+    transform: translate(-50%); }
+
+  section.profile .container.personal_info {
+    padding-bottom: 228px;
+    padding-top: 15px; }
+
+  .tabscontoler {
+    max-width: 370px; }
+
+  .container.tab-pane {
+    max-width: 370px; }
+
+  .awards {
+    margin-top: 20px; }
+
+  section.profile .container.awrds .right_side .shear {
+    position: absolute;
+    right: -12%;
+    font-size: 10px;
+    top: 53%;
+    text-align: center;
+    background: #fff;
+    border-radius: 400px;
+    padding: 10px;
+    transform: translate(-50, 50%);
+    transform: translate(-50%, -50%); }
+
+  .shear {
+    max-width: 30%; }
+
+  section.profile .container.awrds .left_side {
+    position: relative;
+    padding-top: 376px;
+    background: #E6E6E6;
+    padding-bottom: 4px; } }
 @media only screen and (max-width: 576px) {
   header form.search input {
     padding: 4px 6px; }
@@ -598,6 +712,40 @@ footer {
     margin: auto;
     padding-left: 0px;
     margin-top: 10px;
-    padding-top: 10px; } }
+    padding-top: 10px; }
+
+  section.profile .container.awrds .card_student {
+    position: relative;
+    bottom: 834px;
+    width: 370px;
+    left: 50%;
+    transform: translate(-50%); }
+
+  .nav-tabs .nav-link {
+    margin-right: 18px; }
+
+  section.profile .container.awrds .right_side {
+    background-repeat: no-repeat;
+    background: url(images/bgbottom.png) bottom right no-repeat;
+    background-size: 50%;
+    position: relative;
+    padding-bottom: 160px; }
+
+  section.profile .container.awrds .right_side .shear {
+    position: absolute;
+    left: 50%;
+    font-size: 12px;
+    top: 87%;
+    max-width: 80%;
+    text-align: center;
+    background: #fff;
+    border-radius: 400px;
+    padding: 10px;
+    transform: translate(-50, 50%);
+    transform: translate(-50%, -50%); }
+
+  header.profile.gold {
+    background: url(images/goldbg.png);
+    background-size: contain; } }
 
 /*# sourceMappingURL=style.css.map */
