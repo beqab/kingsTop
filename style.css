@@ -69,8 +69,16 @@ header .user_nav a {
       border: 1px solid #fff; }
   header .user_nav a.login {
     color: #fff;
+    background:#3a2a07;
     border: 1px solid #fff;
     margin-right: 14px; }
+    h1 img{
+      width: 68px;
+    }
+    .page-item.active .page-link{
+      border-radius: 50px !important;
+      background-color: #1e63b5;
+    }
     header .user_nav a.login:hover {
       background: #FCC454;
       color: #08087C;
@@ -120,7 +128,7 @@ section.home_section .container {
   .location_filter ul a {
     transition: 0,2s;
     color: #000; }
-    .location_filter ul a:hover, .location_filter ul a.active {
+    .location_filter ul a:hover{
       color: #1E63B5; }
 .location_filter select {
   width: 118px;
@@ -166,7 +174,7 @@ section.home_section .container {
 .subject_filter ul a {
   color: #000;
   font-size: 13px; }
-  .subject_filter ul a:hover, .subject_filter ul a.active {
+  .subject_filter ul a:hover{
     color: #1E63B5; }
 
 .select_clsss {
@@ -199,7 +207,7 @@ section.home_section .container {
       .first_tbale tbody td a:hover {
         color: #1E63B5; }
     .first_tbale tbody td:first-child {
-      width: 50%; }
+      width: 61%; }
     .first_tbale tbody td img {
       width: 40px;
       height: 40px;
@@ -215,7 +223,7 @@ section.home_section .container {
 nav {
   background-color: #F4F4F4; }
   nav ul li:last-child a.page-link, nav ul li:first-child a.page-link {
-    background: #1E63B5 !important;
+    background: #1E63B5;
     border-radius: 50px !important;
     color: #fff;
     line-height: 22px;
@@ -276,7 +284,7 @@ nav {
         .month_rting table tr td a:hover {
           color: #1E63B5; }
       .month_rting table tr td:first-child {
-        width: 44%; }
+        width: 63%; }
 
 /*  login */
 section.home_section.login .container {
@@ -360,6 +368,59 @@ section.registration .form-group .filter {
       margin-left: 40px;
       margin-right: 40px; }
 
+      /*about us*/
+
+      .about_us .row{
+         min-height: 700px;
+      }
+      .about_us .box{
+
+      }
+      .about_us .title{
+       font-size: 18px;
+       color: #1E63B5;
+      }
+      .about_us .row >div:last-child {
+       border-right: none;
+      }
+      .about_us .row >div {
+      /*  border-right: 1px dashed #1E63B5;*/
+        position: relative;
+        height: 100%;
+       /* height: 1200px;*/
+      }
+      .alignecc{
+        align-self: start;
+      }
+      .about_us .container ul{
+       display: inline-block;s
+      }
+      .about_us .container ul.stars{
+       list-style: url("images/star.png");
+      }
+      .testbb{
+        min-height: 500px;
+      }
+      .about_us .container{
+       padding-left: 0px;
+       padding-right: 0px;
+      }
+      .about_us p.resize{
+       height: 184px;
+      }
+      .about_us p{
+         font-size: 14px;
+         overflow: hidden;
+      }
+      .about_us {
+        margin: auto;
+         background: #fff;
+         max-width: 1200px;
+         min-height: 30vw;
+
+      }
+
+
 /* search */
 section.search nav {
   background: #f2f2f2; }
@@ -414,13 +475,22 @@ header.profile.silver {
   background-size: 100% 141px; }
 
 section.profile.bronze .container.awrds .card_student_bg {
-  background: url(images/bronzeframe.png); }
+  background: url(images/bronzeframe.png);
+      background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center; }
 
 section.profile.costumer .container.awrds .card_student_bg {
-  background: url(images/costumerframe.png); }
+  background: url(images/costumerframe.png);
+      background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center; }
 
 section.profile.silver .container.awrds .card_student_bg {
-  background: url(images/silverframe.png); }
+  background: url(images/silverframe.png);
+      background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center; }
 
 section.profile.gold .container.awrds {
   background: #FFB200; }
@@ -455,29 +525,30 @@ section.profile .container.awrds {
     padding-top: 376px;
     background: #E6E6E6;
     padding-bottom: 100px; }
-    section.profile .container.awrds .left_side #home ul li {
+    section.profile .container.awrds .left_side  ul li {
       margin-bottom: 10px; }
-      section.profile .container.awrds .left_side #home ul li span {
+      section.profile .container.awrds .left_side  ul li span {
         color: #000059;
         border-bottom: 1px solid #1E63B5;
         margin-left: 10px; }
-      section.profile .container.awrds .left_side #home ul li a {
+      section.profile .container.awrds .left_side  ul li a {
         display: inline-block; }
   section.profile .container.awrds .right_side {
     background-repeat: no-repeat;
     background: url("images/bgbottom.png") bottom right no-repeat;
     background-size: 50%;
-    position: relative; }
+    position: relative;
+    padding-bottom: 120px;
+  }
     section.profile .container.awrds .right_side .shear {
-      position: absolute;
-      right: -17%;
-      font-size: 10px;
-      top: 90%;
-      text-align: center;
-      background: #fff;
-      border-radius: 400px;
-      padding: 10px;
-      transform: translate(-50, 50%);
+     position: absolute;
+    font-size: 10px;
+        bottom: -14px;
+    left: 50%;
+    text-align: center;
+    background: #fff;
+    border-radius: 400px;
+    padding: 10px;
       transform: translate(-50%, -50%); }
       section.profile .container.awrds .right_side .shear a {
         font-size: 14px;
@@ -492,6 +563,9 @@ section.profile .container.awrds {
         transition: 0.3s; }
         section.profile .container.awrds .right_side .shear a:hover {
           color: #1E63B5; }
+          footer ul li{
+            color: #fff;
+          }
       section.profile .container.awrds .right_side .shear div {
         color: #1E63B5;
         margin-top: 3px;
@@ -504,58 +578,80 @@ section.profile .container.awrds {
       padding: 0 10px;
       font-size: 19px; }
     section.profile .container.awrds .right_side ul {
-      background: #ccc;
+      background: #ccccccbd;
       display: inline-block;
       font-size: 13px;
       padding: 11px;
       margin-top: 22px; }
       section.profile .container.awrds .right_side ul li {
-        line-height: 30px;
-        display: inline-block; }
+        display: inline-block;
+    border-bottom: 2px solid;
+    width: 100%;
+    margin-bottom: 20px;
+    line-height: 16px;
+     }
   section.profile .container.awrds .card_student {
     position: relative;
     bottom: 810px; }
     section.profile .container.awrds .card_student img.student_img {
-      width: 268px;
-      height: 323px;
-      position: absolute;
-      top: 167px;
-      z-index: 1;
-      left: 50%;
-      transform: translate(-50%, -50%); }
+      width: 218px;
+    height: 253px;
+    position: absolute;
+    top: 175px;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    section.profile .container.awrds .card_student .medal1 img{
+      width: 102px;
+    }
     section.profile .container.awrds .card_student .medal1 {
-      position: absolute;
-      bottom: -559px;
-      left: 13px;
-      z-index: 1; }
+    position: absolute;
+    bottom: -494px;
+    left: 49px;
+    z-index: 1; }
+    section.profile .container.awrds .card_student .medal2 img{
+          width: 102px;
+    }
     section.profile .container.awrds .card_student .medal2 {
       position: absolute;
-      bottom: -559px;
-      left: 120px;
+      bottom: -494px;
+          left: 137px;
       z-index: 1; }
+    section.profile .container.awrds .card_student .medal3 img {
+      width: 102px;
+    }
     section.profile .container.awrds .card_student .medal3 {
       position: absolute;
-      bottom: -559px;
+      bottom: -494px;
       z-index: 1;
       left: 226px; }
   section.profile .container.awrds .card_student_bg {
     position: absolute;
-    height: 391px;
+    height: 393px;
     z-index: 2;
+    background-repeat: no-repeat;
     top: 0px;
-    width: 370px;
+    width: 367px;
     background: url(images/goldframe.png);
-    background-position: -66px center;
-    background-repeat: no-repeat; }
+   /* background-position: -66px center;*/
+    background-repeat: no-repeat;
+        background-size: 80% 80%;
+    background-position: center; }
     section.profile .container.awrds .card_student_bg .student_status {
-      max-width: 80%;
-      margin: auto;
-      position: absolute;
-      text-align: center;
-      left: 50%;
-      transform: translate(-50%);
-      bottom: 11px;
-      color: #8a7e7e; }
+             max-width: 80%;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+    width: 241px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 43px;
+    min-height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #8a7e7e;}
 
 footer {
   background: #ccc;
@@ -582,6 +678,30 @@ footer {
         padding-right: 0px; }
 
 /*  responsive */
+@media only screen and (max-width: 1200px) {
+   section.profile .container.awrds .card_student img.student_img{
+    left: 42%;
+   }
+
+}
+@media only screen and (max-width: 1100px) {
+   section.profile .container.awrds .card_student img.student_img{
+    left: 44%;
+   }
+
+}
+@media only screen and (max-width: 1050px) {
+   section.profile .container.awrds .card_student img.student_img{
+    left: 46%;
+   }
+
+}
+@media only screen and (max-width: 994px) {
+    section.profile .container.awrds .card_student img.student_img{
+    left: 50%;
+   }
+  }
+
 @media only screen and (max-width: 992px) {
   header form.search input {
     width: 80%; }
@@ -645,7 +765,7 @@ footer {
     position: absolute;
     right: -12%;
     font-size: 10px;
-    top: 53%;
+  
     text-align: center;
     background: #fff;
     border-radius: 400px;
@@ -662,6 +782,10 @@ footer {
     background: #E6E6E6;
     padding-bottom: 4px; } }
 @media only screen and (max-width: 576px) {
+  .awards{
+    text-align: center;
+    
+  }
   header form.search input {
     padding: 4px 6px; }
 
@@ -740,7 +864,7 @@ footer {
     position: absolute;
     left: 50%;
     font-size: 12px;
-    top: 87%;
+    
     max-width: 80%;
     text-align: center;
     background: #fff;
@@ -754,3 +878,41 @@ footer {
     background-size: contain; } }
 
 /*# sourceMappingURL=style.css.map */
+.hidden{
+  display: none;
+}
+.shown{
+  display: block;
+}
+.chosen{
+  color: #1E63B5 !important;
+}
+.disabld{
+  pointer-events:none;
+  color: grey !important;
+}
+.disbled{
+  pointer-events:none;
+  background-color:grey !important;
+}
+.loginbutton{
+  color: #fff;
+  background: #FCC454;
+  border-radius: 600px;
+  font-size: 35px;
+  padding: 8px 80px;
+}
+.first_tbale tbody td a:hover{
+  cursor:pointer;
+  color: #1E63B5 !important;
+}
+.month_rting table tr:hover{
+  cursor: pointer;
+  color: #1E63B5;
+}
+header .user_nav a.login:hover{
+  cursor: pointer;
+}
+header .user_nav a.register:hover{
+  cursor: pointer;
+}
