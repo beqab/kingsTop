@@ -370,11 +370,21 @@ section.registration .form-group .filter {
 
       /*about us*/
 
+      .about_us .row button{
+            color: #fff;
+            background: #1E63B5;
+            padding: 4px 8px;
+            border-radius: 50px;
+            border: none;
+      }
       .about_us .row{
-         min-height: 700px;
+         min-height: 500px;
       }
       .about_us .box{
 
+      }
+      .about_us .title + img{
+         max-height:190px; 
       }
       .about_us .title{
        font-size: 18px;
@@ -411,14 +421,20 @@ section.registration .form-group .filter {
       .about_us p{
          font-size: 14px;
          overflow: hidden;
+         text-align: justify;
       }
       .about_us {
         margin: auto;
          background: #fff;
-         max-width: 1200px;
+        
          min-height: 30vw;
+         padding-top: 30px;
+         padding-bottom: 30px;
 
       }
+        .btns a{
+             text-align: center;
+        }
 
 
 /* search */
@@ -751,7 +767,7 @@ footer {
   section.profile .container.personal_info {
     padding-bottom: 228px;
     padding-top: 15px; }
-
+ 
   .tabscontoler {
     max-width: 370px; }
 
@@ -782,6 +798,19 @@ footer {
     background: #E6E6E6;
     padding-bottom: 4px; } }
 @media only screen and (max-width: 576px) {
+  .btns a:last-child{
+   margin-left: 0px;
+  }
+  .btns a{
+    font-size: 10px;
+    margin-right: 3px !important;
+    text-align: center;
+    padding: 2px 6px !important;
+  }
+  .about_us p{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .awards{
     text-align: center;
     
